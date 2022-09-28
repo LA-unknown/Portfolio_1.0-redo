@@ -178,8 +178,12 @@ label{
     z-index: 1;
     overflow: hidden;
    }
+   .btn a{
+    text-decoration: none;
+    color: white;
+   }
    
-   button:hover {
+   button a:hover {
     color: #dacc67;
    }
    
