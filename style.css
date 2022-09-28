@@ -27,6 +27,8 @@ header {
 header .logo{
     font-size: 35px;
 }
+
+/* nav bar */
 .nav{
     text-align: right;
     height: 20px;
@@ -48,6 +50,7 @@ label{
     color: black;
     border-right: 2px solid #EAEAEB;
     padding-left: 15px;
+    padding: 0px 2px 0px 15px;
 }
 .menu a span{
     text-decoration: underline;
@@ -125,7 +128,7 @@ label{
     .menu{
         width: 100%;
         display: none;
-        margin-top: 50px;
+        margin-top: 47px;
     }
     .menu a
     {
