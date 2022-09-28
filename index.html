@@ -11,20 +11,21 @@
 <body>
     <header>
         <div class="logo">Portfolio</div>
-        <div class="menu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a hrref="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+        <div class="nav">
+            <label for="toggle"><img src="./images/menu.png" alt=""></label>
+            <input type="checkbox" id="toggle">
+            <div class="menu">
+            <a href="#HOMElink">Home</a>
+            <a href="#ABOUTMElink">About Me</a>
+            <a href="#SERVICElink">Services</a>
+            <a href="#PROJECTlink"><span>Projects</span></a>
+            <a href="#CONTACTlink">Contact Me</a>
         </div>
-        <div class="switch">
-            <input type="checkbox">
-        </div>
+    </div>
     </header>
     <div class="hero">
-        <div class="home">
+        <div id="HOMElink"> <!--  linking purposes only --> </div>
+        <div  class="home">
             <div class="link">
                 <div class="line"><img src="./images/line.png" alt=""></div>
                 <div class="icon">
@@ -48,6 +49,7 @@
                 <h2>Aspiring <span>Web Developer</span> and Student</h2>
             </div>
         </div>
+        <div id="ABOUTMElink"> <!--  linking purposes only --> </div>
         <div class="aboutme">
             <div class="mypic">
                 <img src="./images/Lemuel.png" alt="">
@@ -64,8 +66,62 @@
                 Download Resume
             </button>  
         </div>
-        <div class="Skills/Service">
-
+        <div id="SERVICElink"> <!--  linking purposes only --> </div>
+        <div class="Service">
+            <h2>SERVICES</h2>
+            <div class="Servicelist">
+            <div class="border">
+            <a href="#">
+                <h3>Front-End</h3>
+                <img class="frontend" src="./images/Front-end.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat provident blanditiis temporibus voluptate voluptatum ducimus cumque natus, doloribus voluptatibus fuga!</p>
+            </a>
+            </div><br>
+            <div class="border">
+                <a href="#">
+                    <h3>Back-End</h3>
+                    <img class="backend" src="./images/Back-end.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat provident blanditiis temporibus voluptate voluptatum ducimus cumque natus, doloribus voluptatibus fuga!</p>
+                </a>
+            </div>
+            </div><br>
+        </div>
+        <div class="Skills">
+            <h2>MY SKILLS</h2>
+            <div class="SkillsInfo">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam debitis vero molestiae incidunt autem reprehenderit voluptas aut repudiandae facilis assumenda!</p>
+            </div>
+            <div class="list">
+                <div>
+                <p><img src="./images/html5.png" alt="">HTML5</p>
+                </div>
+                <div>
+                
+                <p><img src="./images/css3.png" alt="">CSS</p>
+                </div>
+                <div>
+                
+                <p><img src="./images/php.png" alt="">PHP</p>
+                </div>
+                <div>
+                
+                <p><img src="./images/sql.png" alt="">SQL</p>
+                </div>
+            </div>
+        </div>
+        <div id="PROJECTlink"> <!--  linking purposes only --> </div>
+        <div class="Project">
+            <h2>PROJECTS</h2>
+            <div class="Projectsinfo">
+                <h1>Soon...</h1>
+            </div>
+        </div><br>
+        <div id="CONTACTlink"> <!--  linking purposes only --> </div>
+        <div class="Contact">
+            <h2>My Contact Info.</h2>
+            <div class="Contactinfo">
+                <h1>Soon...</h1>
+            </div>
         </div>
     </div>
 </body>
