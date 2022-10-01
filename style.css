@@ -67,7 +67,6 @@ label{
 }
 
 /* -------------- */
-
 .home {
     padding-top: 100px;
     padding-bottom: 30px;
@@ -432,9 +431,7 @@ footer .F_right a:hover{
     }
     .Skills{
         padding-top: 20px;
-    }
-    .Project{
-        padding-top: 150px;
+        padding-bottom: 150px;
     }
     .Hline{
         margin-top: 100px;
