@@ -10,6 +10,7 @@ body {
 }
 .hero {
     background-color: #eeecec;
+    overflow-x: hidden;
 }
 header {
     height: 60px;
@@ -19,6 +20,7 @@ header {
     padding: 20px 20px 20px 20px;
     align-items: center;
     background-color: white;
+    opacity: 0.9;
     position: fixed;
     z-index: 2;
     border-bottom: 2px solid #dacc67;
@@ -57,6 +59,7 @@ label{
     text-decoration: underline;
     color: #dacc67;
 }
+
 #toggle{
     display: none;
 }
@@ -64,7 +67,7 @@ label{
 /* -------------- */
 
 .home {
-    padding-top: 90px;
+    padding-top: 100px;
     padding-bottom: 30px;
     height: 100%;
     align-items: center;
@@ -89,6 +92,7 @@ label{
     padding-left: 20px;
 }
 .home .name{
+    font-size: 30px;
     padding: 30px 30px 0px 30px;
 }
 .home .name span{
@@ -98,19 +102,14 @@ label{
 .aboutme{
     padding: 0px 20px 20px 20px;
 }
+.aboutme .mypic{
+    text-align: center;
+}
 .aboutme .mypic img{
-    width: 105%;
+    width: 100%;
     height: 300px;
     object-fit: cover;
     padding-bottom: 20px;
-}
-@media only screen and (min-width: 566px){
-    .aboutme .mypic img{
-    width: 103%;
-    height: 500px;
-    object-fit: cover;
-    padding-bottom: 20px;
-    }
 }
 @media only screen and (max-width: 500px){
 
@@ -165,8 +164,8 @@ label{
     /* Download Button */
 .btn {
     margin: 20px 30px 10px 0px;
-    width: 10em;
-    height: 2.3em;
+    width: 160px;
+    height: 37px;
     background: black;
     color: white;
     border: none;
@@ -296,22 +295,16 @@ label{
 
 footer{
     padding: 0px 20px 20px 20px;
-    text-align: center;
+    align-items: center;
 }
-footer .F_right ul{
+footer .F_right{
     list-style-type: none;
     display: flex;
     justify-content: space-between;
 }
-footer .F_right ul li a{
+footer .F_right a{
     text-decoration: none;
     color: gray;
-    border-bottom: 2px solid black;
-}
-footer .F_Right ul li a:hover{
-    /* hindi ito gumagana ung hover*/
-    border-bottom: none;
-    display: none;
 }
 footer .F_left{
     padding-bottom: 15px;
@@ -319,122 +312,143 @@ footer .F_left{
 footer .F_left p{
     color: gray;
 }
+footer .F_right a:hover{
+    text-decoration: underline black;
+}
 
-/* @media only screen and (min-width: 700px){
-    .nav{
-        display: block;
+@media only screen and (min-width: 566px){
+    .aboutme .mypic img{
+    max-width: 90%;
+    height: 90%;
+    object-fit: cover;
+    padding: 0px 20px 0px 0px;
     }
-    .nav ul{
-        display: flex;
-        list-style: none;
+    .home .name{
+        font-size: 23px;
     }
-    .nav ul li a{
-        padding: 0px 10px 0px 10px;
-        text-decoration: none;
+    .hero{
         font-size: 20px;
-        color: black;
     }
-    header {
-        height: 60px;
+    .home .link .line img{
+        width: 90px;
+        height: 20px;
+    }
+    .btn {
+        font-size: 23px;
+        width: 190px;
+        height: 42px;
+    }
+}
+@media only screen and (min-width: 666px){
+    .aboutme .mypic img{
+        width: 90%;
+        height: 90%;
+        object-fit: cover;
+        padding: 10px 20px 10px 20px;
+    }
+    .home .name{
+        font-size: 26px;
+    }
+    .hero{
+        font-size: 23px;
+    }
+    .home .link .line img{
+        width: 100px;
+        height: 20px;
+    }
+    .btn {
+        font: 26px;
+        width: 220px;
+        height: 47px;
+    }
+}
+@media only screen and (min-width: 735px){
+    .aboutme .mypic img{
+        width: 90%;
+        height: 90%;
+        object-fit: cover;
+        padding: 10px 20px 10px 20px;
+    }
+    .home .name{
+        font-size: 29px;
+    }
+    .home .link .line img{
+        width: 150px;
+        height: 20px;
+    }
+    .btn {
+        font-size: 29px;
+        width: 250px;
+        height: 52px;
+    }
+}
+@media only screen and (min-width: 811px){
+    .aboutme .mypic img{
+        width: 90%;
+        height: 90%;
+        object-fit: cover;
+        padding: 10px 20px 10px 20px;
+    }
+    .home .name{
+        font-size: 32px;
+    }
+    .home .link .line img{
+        width: 200px;
+        height: 20px;
+    }
+    
+} 
+@media only screen and (min-width: 1024px){
+    .aboutme .mypic img{
+        width: 90%;
+        height: 90%;
+        object-fit: cover;
+        padding: 10px 20px 10px 20px;
+    }
+    .hero{
+        font-size: 23px;
+    }
+    .home .name{
+        font-size: 45px;;
+    }
+    .home, .aboutme, .Skills, .Project, .Hline, .Contact, footer{
+        margin: 20px 50px 20px 50px;
+    }
+    .Skills{
+        padding-top: 45px;
+    }
+    .Project{
+        padding-top: 150px;
+    }
+    .Hline{
+        margin-top: 100px;
+    }
+    footer{
         display: flex;
         justify-content: space-between;
-        padding: 20px 40px 20px 40px;
-        align-items: center;
     }
-    header .logo{
-        font-size: 40px;
-    }
-    .home {
-        height: 100%;
-        background: url(./images/Background1.jpg);
-        background-repeat: no-repeat;
-        background-size: 150%;
-        background-position: 50% 50%;
-        align-items: center;
-        font-size: 25px;
-        padding: 50px 50px 50px 50px;
-    }
-}
-
-@media only screen and (min-width: 1000px) {
-    .nav{
-        display: block;
-    }
-    .nav ul{
+    footer .F_right{
         display: flex;
-        list-style: none;
     }
-    .nav ul li a{
-        padding: 0px 30px 0px 30px;
-        text-decoration: none;
-        font-size: 30px;
-        color: black;
+    footer .F_right a{
+        padding-left: 20px;
     }
-    header {
-        background-color: white;
-        height: 100px;
+
+    .home .link .line img{
+        width: 250px;
+        height: 20px;
+    }
+    .aboutme{
         display: flex;
-        justify-content: space-between;
-        padding: 20px 60px 20px 60px;
-        align-items: center;
+        flex-direction: row-reverse;
     }
-    header .logo{
-        font-size: 60px;
+    .aboutme .aboutmeinfo{
+        width: 50%;
+        padding-top: 85px;
     }
-    body{
-        background-color: #eeecec;
+    .aboutme .mypic img{
+        width: 90%;
+        height: 90%;
+        object-fit: cover;
     }
-    .home {
-        height: 100%;
-        background: url(./images/Background1.jpg);
-        background-repeat: no-repeat;
-        background-size: 80%;
-        background-position: 90% 60%;
-        align-items: center;
-        font-size: 25px;
-        padding: 50px 50px 50px 50px;
-    }
-.home .link {
-    width: 25%;
-    padding-top: 40px;
-    display: flex;
-    align-items: center;
 }
-.home .link .line img{
-    width: 250px;
-    height: 30px;
-}
-.home .link .icon {
-    display: flex;
-    justify-content: space-between;
-}
-.home .link .icon img{
-    height: 30px;
-    padding-left: 10px;
-}
-.home .name{
-    padding: 30px 50px 0px 50px;
-    font-size: 45px;
-}
-.home .name span{
-    color: #dacc67;
-}
-.btn {
-    margin: 20px 50px 75px 50px;
-    width: 10em;
-    height: 2.3em;
-    background: black;
-    color: white;
-    border: none;
-    border-radius: 0.625em;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-   }
-}*/
-
-
-
