@@ -1,471 +1,145 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,400;1,200&family=Montserrat&family=Oswald&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Oswald', sans-serif;
-}
-body {
-    height: 100%;
-}
-.hero {
-    background-color: #eeecec;
-    overflow-x: hidden;
-}
-header {
-    height: 60px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 20px 20px 20px;
-    align-items: center;
-    background-color: white;
-    opacity: 0.9;
-    position: fixed;
-    z-index: 2;
-    border-bottom: 2px solid #dacc67;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Primary Meta Tags -->
+    <title>Lemuel Alosa - Portfolio</title>
+    <meta name="title" content="Lemuel Alosa - Portfolio">
+    <meta name="description" content="This was created using HTML/CSS only! so don't expect to Much... Thanks..">
 
-}
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Lemuel Alosa - Portfolio">
+    <meta property="og:description" content="This was created using HTML/CSS only! so don't expect to Much... Thanks..">
+    <meta property="og:image" content="https://raw.githubusercontent.com/LA-unknown/Portfolio_1.0-redo/main/images/Meta.PNG">
 
-header .logo a{
-    color: black;
-    text-decoration: none;
-    font-size: 35px;
-}
-
-/* nav bar */
-.nav{
-    text-align: right;
-    height: 20px;
-    z-index: 2;
-}
-label img{
-    height: 50px;
-    display: none;
-}
-label{
-    text-align: right;
-}
-.menu{
-    width: 100%;
-}
-.menu a{
-    font-size: 17px;
-    text-decoration: none;
-    color: black;
-    border-right: 2px solid #EAEAEB;
-    padding-left: 15px;
-    padding: 0px 2px 0px 15px;
-}
-.menu a span{
-    text-decoration: underline;
-    color: #dacc67;
-}
-
-#toggle{
-    display: none;
-}
-
-/* -------------- */
-
-.home {
-    padding-top: 100px;
-    padding-bottom: 30px;
-    height: 100%;
-    align-items: center;
-    font-size: 20px;
-    z-index: 1;
-}
-.home .link {
-    width: 25%;
-    display: flex;
-    align-items: center;
-}
-.home .link .line img{
-    width: 80px;
-    height: 20px;
-}
-.home .link .icon {
-    display: flex;
-    justify-content: space-between;
-}
-.home .link .icon img{
-    height: 25px;
-    padding-left: 20px;
-}
-.home .name{
-    font-size: 30px;
-    padding: 30px 30px 0px 30px;
-}
-.home .name span{
-    color: #dacc67;
-}
-
-.aboutme{
-    padding: 0px 20px 20px 20px;
-}
-.aboutme .mypic{
-    text-align: center;
-}
-.aboutme .mypic img{
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    padding-bottom: 20px;
-}
-@media only screen and (max-width: 500px){
-
-    .nav{
-        text-align: right;
-        height: 35px;
-        z-index: 2;
-    }
-    label img{
-        display: block;
-        height: 40px;
-    }
-    label{
-        float: right;
-    }
-    .menu{
-        width: 100%;
-        display: none;
-        margin-top: 47px;
-    }
-    .menu a
-    {
-        font-size: 23px;
-        text-decoration: none;
-        color: white;
-        display: block;
-        text-align: center;
-        background-color: black;
-        border: 1px solid #EAEAEB;
-        padding: 25px;
-    }
-    .menu a span{
-        text-decoration: underline;
-        color: #dacc67;
-    }
-    #toggle{
-        display: none;
-    }
-    label{
-        cursor: pointer;
-    }
-    #toggle:checked + .menu{
-        display: block;
-    }
-}
-
-
-.aboutmeinfo p{
-    padding-top: 10px;
-    color: gray;
-}
-    /* Download Button */
-.btn {
-    margin: 20px 30px 10px 0px;
-    width: 160px;
-    height: 37px;
-    background: black;
-    color: white;
-    border: none;
-    border-radius: 0.625em;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-   }
-   .btn a{
-    text-decoration: none;
-    color: white;
-   }
-   
-   button a:hover {
-    color: #dacc67;
-   }
-   
-   button:after {
-    content: "";
-    background: white;
-    position: absolute;
-    z-index: -1;
-    left: -20%;
-    right: -20%;
-    top: 0;
-    bottom: 0;
-    transform: skewX(-45deg) scale(0, 1);
-    transition: all 0.5s;
-   }
-   
-   button:hover:after {
-    transform: skewX(-45deg) scale(1, 1);
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-   }
-
-    /* Skills */
-.Skills{
-    margin: 20px 20px 10px 20px;
-    text-align: center;
-    justify-content: center;
-}
-.Skills h2{
-    padding-bottom: 20px;
-}
-.Skills .SkillsInfo p{
-    padding-bottom: 20px;
-    color: gray;
-}
-.Skills .list{
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-}
-.Skills .list p{padding: 20px;}
-.Skills .list img{
-    filter: sepia(100%);
-    opacity: 0.7;
-    height: 50px;
-}
-
-/* Projects */
-.Project{
-    margin: 80px 20px 10px 20px;
-}
-.Project h2{
-    text-align: center;
-    padding-bottom: 20px;
-}
-.Project p{
-    color: gray;
-}
-.Project .border{
-    border: thick double gray;
-    text-align: center;
-}
-.Project .border a, .Project .border p{
-    text-decoration: none;
-    color: black;
-    text-align: center;
-    padding: 0px 10px 0px 10px;
-}
-.Project .border .PLP{
-    width: 100%;
-    zoom: 80%;
-    object-fit: cover;
-    padding: 10px 20px 10px 20px;
-}
-
-.Hline{
-    margin: 80px 30px 0px 30px;
-    border: 1px solid black;
-    background-color: black;
-}
-
-.Contact{
-    background-color: #eeecec;
-    padding: 60px 20px 45px 20px;
-    text-align: center;
-}
-
-.Contact .Contactinfo{
-    padding: 20px 20px 20px 20px;
-    color: gray;
-}
-.Contact .Contactinfo h2{
-    color: black;
-    text-decoration: underline #dacc67;
-}
-.Contact .Contactinfo .email{
-    padding-top: 20px;
-}
-
-.Contact .Contactinfo .email a{
-    font-size: 22px;
-    text-decoration: none;
-    color: black;
-    border-bottom: 2px solid black;
-}
-
-.Contact .Contactinfo .email a:hover{
-    border-bottom: none;
-}
-
-footer{
-    padding: 0px 20px 20px 20px;
-    align-items: center;
-}
-footer .F_right{
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-}
-footer .F_right a{
-    text-decoration: none;
-    color: gray;
-}
-footer .F_left{
-    padding-bottom: 15px;
-}
-footer .F_left a{
-    text-decoration: none;
-}
-footer .F_left h5{
-    color: black;
-}
-footer .F_left p{
-    color: gray;
-}
-footer .F_right a:hover{
-    text-decoration: underline black;
-}
-
-@media only screen and (min-width: 566px){
-    .aboutme .mypic img{
-    max-width: 90%;
-    height: 90%;
-    object-fit: cover;
-    padding: 0px 20px 0px 0px;
-    }
-    .home .name{
-        font-size: 23px;
-    }
-    .hero{
-        font-size: 20px;
-    }
-    .home .link .line img{
-        width: 90px;
-        height: 20px;
-    }
-    .btn {
-        font-size: 23px;
-        width: 190px;
-        height: 42px;
-    }
-}
-@media only screen and (min-width: 666px){
-    .aboutme .mypic img{
-        width: 90%;
-        height: 90%;
-        object-fit: cover;
-        padding: 10px 20px 10px 20px;
-    }
-    .home .name{
-        font-size: 26px;
-    }
-    .hero{
-        font-size: 23px;
-    }
-    .home .link .line img{
-        width: 100px;
-        height: 20px;
-    }
-    .btn {
-        font: 26px;
-        width: 220px;
-        height: 47px;
-    }
-}
-@media only screen and (min-width: 735px){
-    .aboutme .mypic img{
-        width: 90%;
-        height: 90%;
-        object-fit: cover;
-        padding: 10px 20px 10px 20px;
-    }
-    .home .name{
-        font-size: 29px;
-    }
-    .home .link .line img{
-        width: 150px;
-        height: 20px;
-    }
-    .btn {
-        font-size: 29px;
-        width: 250px;
-        height: 52px;
-    }
-}
-@media only screen and (min-width: 811px){
-    .aboutme .mypic img{
-        width: 90%;
-        height: 90%;
-        object-fit: cover;
-        padding: 10px 20px 10px 20px;
-    }
-    .home .name{
-        font-size: 32px;
-    }
-    .home .link .line img{
-        width: 200px;
-        height: 20px;
-    }
-    
-} 
-@media only screen and (min-width: 1024px){
-    .menu a{
-        font-size: 22px;
-        text-decoration: none;
-        color: black;
-        border-right: 2px solid #EAEAEB;
-        padding-left: 15px;
-        padding: 0px 2px 0px 15px;
-    }
-    .aboutme .mypic img{
-        width: 90%;
-        height: 90%;
-        object-fit: cover;
-        padding: 10px 20px 10px 20px;
-    }
-    .hero{
-        font-size: 23px;
-    }
-    .home .name{
-        font-size: 45px;;
-    }
-    .home, .aboutme, .Skills, .Project, .Hline, .Contact, footer{
-        margin: 100px 50px 0px 50px;
-    }
-    .Skills{
-        padding-top: 20px;
-    }
-    .Project{
-        padding-top: 150px;
-    }
-    .Hline{
-        margin-top: 100px;
-    }
-    footer{
-        display: flex;
-        justify-content: space-between;
-    }
-    footer .F_right{
-        display: flex;
-    }
-    footer .F_right a{
-        padding-left: 20px;
-    }
-
-    .home .link .line img{
-        width: 250px;
-        height: 20px;
-    }
-    .aboutme{
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-    }
-    .aboutme .aboutmeinfo{
-        width: 50%;
-        padding-top: 85px;
-    }
-    .aboutme .mypic img{
-        width: 90%;
-        height: 90%;
-        object-fit: cover;
-    }
-}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio 1.0</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="https://lemuelalosa.vercel.app/">My Portfolio</a> 
+        </div>
+        <div class="nav">
+            <label for="toggle"><img src="./images/menu.png" alt=""></label>
+            <input type="checkbox" id="toggle">
+            <div class="menu">
+            <a href="#HOMElink">Home</a>
+            <a href="#ABOUTMElink">About Me</a>
+            <a href="#PROJECTlink"><span>Projects</span></a>
+            <a href="#CONTACTlink">Contact Me</a>
+        </div>
+    </div>
+    </header>
+    <div class="hero">
+        <div id="HOMElink"> <!--  linking purposes only --> </div>
+        <div  class="home">
+            <div class="link">
+                <div class="line"><img src="./images/line.png" alt=""></div>
+                <div class="icon">
+                    <a href="https://github.com/LA-unknown" target="_blank">
+                        <img title="GitHub - LA_unkown" src="./images/github.png" alt="">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img title="LinkIn - SOON" class="linkin" src="./images/linkin.png" alt="">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img title="Twitter - Alemuel_24" class="twitter" src="./images/twitter.png" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/alemuel_31/" target="_blank">
+                        <img title="Insta - Alemuel_31" class="insta" src="./images/insta.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="name">
+                <h3>Hello,</h3>
+                <h1>I am Lemuel <span>Alosa</span></h1>
+                <h2>Aspiring <span>Web Developer</span> and Student</h2>
+            </div>
+        </div>
+        <div> <!--  linking purposes only --> </div>
+        <div class="aboutme">
+            <div id="ABOUTMElink" class="mypic">
+                <img src="./images/Lemuel.png" alt="">
+            </div>
+            <div class="aboutmeinfo">
+                <h2>About Me</h2>
+                <p>Hi I am Lemuel Alosa. I am a self taught web developer based in Bulacan, Philippines.<br>
+                <br>
+                Currenly a college student Bachelor of Science in Information Technology major in Web and Mobile App Development. I'm obsessed on making website and learning everything about web development.<br>
+                <br>
+                Very passionate individual and highly motivated to become successful professional web developer and to build many application that will make other peoples life easier is my ultimate goal.</p>
+            
+            <button class="btn">
+                <a target="_blank" href="https://drive.google.com/file/d/1a1LfomepCdLY82qGpBhrFRI47AKNVHQE/view?usp=sharing">Download C.V</a>
+            </button> 
+            </div> 
+        </div>
+        <div class="Skills">
+            <h2>MY SKILLS</h2>
+            <div class="SkillsInfo">
+                <p>Throughout my journey to become a web developer, I've learned and grasp solid foundation of programming and Web development concepts, and dedicate my full attention to learn and build applications with this concepts and tools.</p>
+            </div>
+            <div class="list">
+                <div>
+                <p><img src="./images/html5.png" alt="">HTML5</p>
+                </div>
+                <div>
+                
+                <p><img src="./images/css3.png" alt="">CSS</p>
+                </div>
+                <div>
+                
+                <p><img src="./images/php.png" alt="">PHP</p>
+                </div>
+                <div>
+                
+                <p><img src="./images/sql.png" alt="">SQL</p>
+                </div>
+            </div>
+        </div>
+        <div id="PROJECTlink"> <!--  linking purposes only --> </div>
+            <div class="Project">
+                <h2>PROJECTS</h2>
+                <p>Watching tutorials and reading documentation is not enough to learn coding. Apply it by building projects and see the progress that you made.</p><br>
+                <p>So I keep making myself busy and always have a project to work on to effectively enhance my skills in web development. Take a look at some of the applications I've dedicated my time to.</p><br>
+                <div class="Projectlist">
+                <div class="border">
+                <a href="#">
+                    <h3>Product_Landing - Pages</h3>
+                    <img class="PLP" src="./images/Product_Landing_Page.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat provident blanditiis temporibus voluptate voluptatum ducimus cumque natus, doloribus voluptatibus fuga!</p>
+                </a>
+                </div>
+                </div>
+            </div>
+        <div id="CONTACTlink"> <!--  linking purposes only --> </div>
+        <div class="Hline"></div> <!-- Horizontal line -->
+        <div class="Contact">
+            <h2>My Contact Info.</h2>
+            <div class="Contactinfo">
+                <h3>HAVE A PROJECT IN MIND?</h3>
+                <h2>"LET’S ACHIEVE TOGETHER"</h2>
+                <p>Feel free to send me an email if you are looking for a developer, have a question, or just want to connect.</p>
+                <div class="email">
+                <a Title="Email NOW" target="_blank" href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRnXVTlXgqljvzqDckmNRjJhxBCGhMqbtsvxRkzXphRXmxVMTXLXtgQLJVNhlghbtncdFzB">alosalemuel31@gmail.com</a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="F_left">
+                <a href="https://lemuelalosa.vercel.app/"><h5>Lemuel Alosa</h5></a>
+                <a href="https://lemuelalosa.vercel.app/"><p>© 2022 Lemuel Alosa | All Rights Reserved</p></a>
+            </div>
+            <div class="F_right">
+                <a #id="F1" title="GitHub - LA_unkown" target="_blank"                   href="https://github.com/LA-unknown">Github</a>
+                <a #id="F2" title="Coming Soon..." target="_blank" href="#">Linkedin</a>
+                <a #id="F3" title="Coming Soon..." target="_blank"href="#">Twitter</a>
+                <a #id="F4" title="Instagram - Alemuel_31" target="_blank" href="https://www.instagram.com/alemuel_31">Instagram</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
